@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+</head>
+<body>
+
+    <h2>Форма реєстрації</h2>
+
+    <form action="/submit" method="POST">
+        <!-- Поле для імені -->
+        <label for="first-name">Ім'я:</label><br>
+        <input type="text" id="first-name" name="first_name" required><br><br>
+
+        <!-- Поле для прізвища -->
+        <label for="last-name">Прізвище:</label><br>
+        <input type="text" id="last-name" name="last_name" required><br><br>
+
+        <!-- Поле для електронної пошти -->
+        <label for="email">Електронна пошта:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Поле для вибору статі -->
+        <label>Стать:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Чоловіча</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Жіноча</label><br><br>
+
+        <!-- Поле для вибору дати народження -->
+        <label for="dob">Дата народження:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Поле для вибору країни -->
+        <label for="country">Країна:</label><br>
+        <select id="country" name="country" required>
+            <option value="ukraine">Україна</option>
+            <option value="usa">США</option>
+            <option value="uk">Велика Британія</option>
+            <option value="canada">Канада</option>
+        </select><br><br>
+
+        <!-- Поле для прийняття умов -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Я приймаю умови використання</label><br><br>
+
+        <!-- Кнопка для відправки форми -->
+        <button type="submit">Відправити</button>
+    </form>
+
+</body>
+</html>
